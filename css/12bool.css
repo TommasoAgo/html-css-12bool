@@ -15,6 +15,7 @@
     background-color: pink;
     border: 1px solid black;
     position: relative;
+    padding: 5px;
 }
 
 .debug [class*="col-"] span {
@@ -22,6 +23,17 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+}
+
+.debug .container > [class*="col-"] .container {
+    height: 100%;
+    width: 100%;
+}
+
+.debug .container > [class*="col-"] .container [class*="col-"] {
+    background-color: lightcoral;
+    border: 1px solid white;
+    height: 100%;
 }
 
 /* FRAMEWORK */
